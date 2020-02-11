@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         sci.setmImageResource(R.drawable.ic_face);
         models.add(sci);
 
-
-
         return models;
 
     }
