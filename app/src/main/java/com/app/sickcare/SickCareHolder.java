@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class SickCareHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-
     ImageView  mImageView;
     TextView  mTextView1, mTextView2;
     ItemClickListener itemClickListener;

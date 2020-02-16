@@ -20,7 +20,9 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
         ActionBar actionBar = getSupportActionBar();
+
 
         mTextView1sc = findViewById(R.id.textView1sc);
         mTextView2sc = findViewById(R.id.textView2sc);

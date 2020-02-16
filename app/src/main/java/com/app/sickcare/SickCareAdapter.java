@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.ByteArrayInputStream;
@@ -26,12 +27,10 @@ public class SickCareAdapter extends RecyclerView.Adapter<SickCareHolder> {
     ArrayList<SickCareItem> models;
 
 
-
-      public SickCareAdapter(Context c, ArrayList<SickCareItem> models) {
+    public SickCareAdapter(Context c, ArrayList<SickCareItem> models) {
         this.c = c;
         this.models = models;
     }
-
 
 
     @NonNull
@@ -56,7 +55,7 @@ public class SickCareAdapter extends RecyclerView.Adapter<SickCareHolder> {
 
                 String gTextView1sc = models.get(position).getmText1();
                 String gTextView2sc = models.get(position).getmText2();
-                BitmapDrawable bitmapDrawable = (BitmapDrawable)holder.mImageView.getDrawable();
+                BitmapDrawable bitmapDrawable = (BitmapDrawable) holder.mImageView.getDrawable();
 
                 Bitmap bitmap = bitmapDrawable.getBitmap();
 
@@ -75,15 +74,7 @@ public class SickCareAdapter extends RecyclerView.Adapter<SickCareHolder> {
             }
         });
 
-        holder.setItemClickListener(new ItemClickListener() {
-            @Override
-            public void onItemClickListener(View v, int position) {
 
-                if (models.get(position).getmText1().equals("news")) {
-
-                }
-            }
-        });
 
     }
 
@@ -91,4 +82,6 @@ public class SickCareAdapter extends RecyclerView.Adapter<SickCareHolder> {
     public int getItemCount() {
         return models.size();
     }
+
 }
+

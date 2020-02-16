@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         SickCareItem sci = new SickCareItem();
         sci.setmText1("news");
         sci.setmText2("feed");
-        sci.setmImageResource(R.drawable.ic_face);
+        sci.setmImageResource(R.drawable.progress_icon);
         models.add(sci);
 
         return models;
